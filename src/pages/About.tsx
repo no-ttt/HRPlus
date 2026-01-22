@@ -67,7 +67,7 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-bold text-[#333333] mb-6">品牌理念</h2>
+              <h2 className="text-4xl font-bold text-[#333333] mb-6">公司理念</h2>
               <div className="w-20 h-1 bg-[#F37B22] mb-6"></div>
               <p className="text-gray-700 text-lg leading-relaxed mb-6">
                 HRPlus Consulting 的存在，是為了讓企業與人才都能
@@ -113,7 +113,7 @@ export default function About() {
               </div>
               <h3 className="text-2xl font-bold text-[#333333] mb-4">我們的願景</h3>
               <p className="text-gray-600 leading-relaxed">
-                成為亞洲最值得信賴的人才顧問夥伴。我們相信——當人與組織找到契合，未來就能更有力量。
+                成為企業與人才最值得信賴的人才顧問夥伴。我們相信——當人與組織找到契合，未來就能更有力量。
               </p>
             </div>
 
@@ -158,11 +158,19 @@ export default function About() {
             <h2 className="text-4xl font-bold text-[#333333] mb-4">我們的故事</h2>
             <div className="w-20 h-1 bg-[#F37B22] mx-auto mb-4"></div>
             <p className="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
-              HRPlus 創立於台北，由一群具多年獵才與企業管理經驗的顧問組成。
+              HRPlus 是一家中高階人才顧問諮詢公司，我們的顧問來自業界均具備20年以上HR與招募經驗，具備豐富的產業經驗與知識。
               <br />
               我們曾走過外商的制度嚴謹，也理解新創的靈活挑戰。
               <br />
               這些經驗，讓我們更懂得「人」的價值與溫度。
+              <br />
+              我們的目標是要與客戶建立「深度」的關係，與客戶緊密合作，秉持不屈不撓的態度與承諾，把客戶的利益放在首位，協助客戶找到適合的人才。
+              <br />
+              我們也較其他人才顧問公司所需時間迅速且精準推薦人才。
+              <br />
+              我們的顧問具有廣泛的關係網絡並且熟悉市場的產業訊息。
+              <br />
+              憑藉廣泛人才網絡與熟悉產業生態，我們能夠更迅速地回應客戶需求，精準進行人才搜尋，為客戶降低招聘成本，並提供增值服務。
             </p>
           </div>
 
@@ -173,9 +181,8 @@ export default function About() {
               {timeline.map((item, index) => (
                 <div
                   key={index}
-                  className={`flex items-center gap-8 ${
-                    index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
-                  }`}
+                  className={`flex items-center gap-8 ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
+                    }`}
                 >
                   <div className={`flex-1 ${index % 2 === 0 ? 'md:text-right' : 'md:text-left'} text-left pl-12 md:pl-0`}>
                     <div className="inline-block bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
@@ -209,7 +216,7 @@ export default function About() {
               HRPlus 都能為您提供最專業、最貼心的服務。
             </p>
             <div className="inline-block px-8 py-4 bg-gradient-to-r from-[#F37B22] to-[#ff9447] text-white rounded-full font-semibold text-lg hover:shadow-xl transition-all cursor-pointer">
-              Adding Value to People and Organizations
+              YOUR Best HR Business Partner
             </div>
           </div>
         </div>

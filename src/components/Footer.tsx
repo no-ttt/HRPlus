@@ -10,15 +10,15 @@ export default function Footer() {
             <div className="flex items-center space-x-3 mb-4">
               <div className="w-12 h-12 flex items-center justify-center">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" className="w-12 h-12">
-                  <circle cx="30" cy="30" r="12" fill="#F37B22"/>
-                  <path d="M 30 45 L 20 55 L 20 80 L 25 80 L 25 65 L 35 65 L 35 80 L 40 80 L 40 55 Z" fill="#F37B22"/>
-                  <rect x="60" y="35" width="8" height="30" rx="1" fill="#F37B22"/>
-                  <rect x="49" y="46" width="30" height="8" rx="1" fill="#F37B22"/>
+                  <circle cx="30" cy="30" r="12" fill="#F37B22" />
+                  <path d="M 30 45 L 20 55 L 20 80 L 25 80 L 25 65 L 35 65 L 35 80 L 40 80 L 40 55 Z" fill="#F37B22" />
+                  <rect x="60" y="35" width="8" height="30" rx="1" fill="#F37B22" />
+                  <rect x="49" y="46" width="30" height="8" rx="1" fill="#F37B22" />
                 </svg>
               </div>
               <div>
                 <div className="text-white font-bold text-xl">HRPlus Consulting</div>
-                <div className="text-[#F37B22] text-xs tracking-wider">Adding Value to People and Organizations</div>
+                <div className="text-[#F37B22] text-xs tracking-wider">YOUR Best HR Business Partner</div>
               </div>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-4">
@@ -78,15 +78,15 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start space-x-3 text-sm">
                 <MapPin size={18} className="text-[#F37B22] mt-0.5 flex-shrink-0" />
-                <span className="text-gray-400">台北市信義區信義路五段7號</span>
+                <span className="text-gray-400">台北市南京東路二段150號11樓</span>
               </li>
               <li className="flex items-center space-x-3 text-sm">
                 <Phone size={18} className="text-[#F37B22] flex-shrink-0" />
-                <span className="text-gray-400">+886 2 1234 5678</span>
+                <span className="text-gray-400">(886) 2 6605-7875</span>
               </li>
               <li className="flex items-center space-x-3 text-sm">
                 <Mail size={18} className="text-[#F37B22] flex-shrink-0" />
-                <span className="text-gray-400">hello@hrplus.com.tw</span>
+                <span className="text-gray-400">contact@hrplusconsultants.com</span>
               </li>
             </ul>
           </div>
@@ -94,7 +94,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-700 mt-8 pt-8 text-center">
           <p className="text-gray-400 text-sm">
-            © 2024 HRPlus Consulting. All rights reserved. | Adding Value to People and Organizations.
+            © 2024 HRPlus Consulting. All rights reserved. | YOUR Best HR Business Partner.
           </p>
         </div>
       </div>

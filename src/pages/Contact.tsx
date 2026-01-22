@@ -47,7 +47,7 @@ export default function Contact() {
                 聯絡我們
               </h1>
               <p className="text-lg sm:text-xl text-white/95 leading-relaxed">
-                有任何合作或媒合需求，歡迎與我們聯繫
+                有任何合作或招募需求，歡迎與我們聯繫
                 <br />
                 我們將在 24 小時內回覆您
               </p>

@@ -117,41 +117,55 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-gradient-to-b from-white via-[#FAF9F7]/30 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#333333] mb-4">人才與企業的故事</h2>
-            <div className="w-20 h-1 bg-[#F37B22] mx-auto mb-4"></div>
-            <p className="text-gray-600 text-lg">60 秒看見真實的相遇與成長</p>
-          </div>
+          <div className="max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="group relative bg-white p-8 md:p-10 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 overflow-hidden">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[#F37B22]/10 to-transparent rounded-full blur-2xl transform translate-x-8 -translate-y-8"></div>
 
-          <div className="max-w-5xl mx-auto">
-            <div className="relative aspect-video rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-gray-900 to-gray-800">
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-20 h-20 bg-[#F37B22] rounded-full flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform cursor-pointer">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" className="w-10 h-10 ml-1">
-                      <path d="M8 5v14l11-7z"/>
-                    </svg>
+                <div className="relative z-10">
+                  <h3 className="text-2xl md:text-3xl font-bold text-[#333333] mb-6 leading-tight">
+                    主要專注產業包含
+                  </h3>
+
+                  <div className="space-y-3">
+                    <div className="flex flex-wrap gap-2">
+                      {['半導體', 'IC設計', '化學/材料', '消費電子', 'IT軟硬體', '電子元件', 'AI', '電動車', '軟體', '硬體', '網路/電信', '離岸風電', '民生消費'].map((industry, index) => (
+                        <span
+                          key={index}
+                          className="inline-block px-4 py-2 bg-gradient-to-r from-[#F37B22]/10 to-[#ff9447]/10 text-[#F37B22] rounded-full text-sm font-medium border border-[#F37B22]/20 hover:border-[#F37B22] hover:shadow-md transition-all duration-200"
+                        >
+                          {industry}
+                        </span>
+                      ))}
+                    </div>
                   </div>
-                  <p className="text-white text-lg font-medium">品牌形象影片</p>
-                  <p className="text-white/70 text-sm mt-2">點擊播放</p>
                 </div>
               </div>
-            </div>
 
-            <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="text-center p-6 bg-[#FAF9F7] rounded-2xl">
-                <div className="text-3xl font-bold text-[#F37B22] mb-2">500+</div>
-                <p className="text-gray-600">成功媒合案例</p>
-              </div>
-              <div className="text-center p-6 bg-[#FAF9F7] rounded-2xl">
-                <div className="text-3xl font-bold text-[#F37B22] mb-2">95%</div>
-                <p className="text-gray-600">客戶滿意度</p>
-              </div>
-              <div className="text-center p-6 bg-[#FAF9F7] rounded-2xl">
-                <div className="text-3xl font-bold text-[#F37B22] mb-2">15+</div>
-                <p className="text-gray-600">產業領域經驗</p>
+              <div className="group relative bg-white p-8 md:p-10 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 overflow-hidden">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[#F37B22]/10 to-transparent rounded-full blur-2xl transform translate-x-8 -translate-y-8"></div>
+
+                <div className="relative z-10">
+                  <h3 className="text-2xl md:text-3xl font-bold text-[#333333] mb-6 leading-tight">
+                    擅長中高階職位包括
+                  </h3>
+
+                  <div className="space-y-3">
+                    <div className="flex flex-wrap gap-2">
+                      {['CEO/CXO', 'RD', '技術服務', '工程', '業務和行銷', '採購', '生產製造', 'QA', '資訊', '人資', '財務會計'].map((position, index) => (
+                        <span
+                          key={index}
+                          className="inline-block px-4 py-2 bg-gradient-to-r from-[#F37B22]/10 to-[#ff9447]/10 text-[#F37B22] rounded-full text-sm font-medium border border-[#F37B22]/20 hover:border-[#F37B22] hover:shadow-md transition-all duration-200"
+                        >
+                          {position}
+                        </span>
+                      ))}
+                    </div>
+                    <p className="text-gray-600 text-sm mt-4 italic">等主管職位</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -189,9 +203,8 @@ export default function Home() {
                     <button
                       key={index}
                       onClick={() => setCurrentCase(index)}
-                      className={`w-2 h-2 rounded-full transition-all ${
-                        index === currentCase ? 'bg-[#F37B22] w-8' : 'bg-gray-300'
-                      }`}
+                      className={`w-2 h-2 rounded-full transition-all ${index === currentCase ? 'bg-[#F37B22] w-8' : 'bg-gray-300'
+                        }`}
                     />
                   ))}
                 </div>

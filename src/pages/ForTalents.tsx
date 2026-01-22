@@ -7,19 +7,21 @@ export default function ForTalents() {
       icon: Compass,
       title: '職涯諮詢',
       description: '一對一專業顧問諮詢，協助您釐清職涯方向，找到最適合的發展路徑。我們深入了解您的優勢與目標，提供客製化建議。',
-      features: ['職涯規劃建議', '產業趨勢分析', '薪資行情諮詢', '轉職評估'],
+    },
+    {
+      icon: TrendingUp,
+      title: '職涯分析與規畫建議',
+      description: '深入分析您的職業發展現況，提供專業的職涯規劃建議，協助您制定清晰的職業發展藍圖與目標。',
     },
     {
       icon: FileText,
-      title: '履歷健檢與面試準備',
+      title: '履歷優化與面談技巧訓練',
       description: '專業履歷優化服務與面試技巧指導，讓您在求職過程中脫穎而出。從履歷撰寫到面試演練，全方位提升您的競爭力。',
-      features: ['履歷撰寫優化', '面試技巧指導', '模擬面試演練', '個人品牌建立'],
     },
     {
       icon: Briefcase,
       title: '專業職缺媒合',
       description: '根據您的專業背景與職涯目標，精準推薦適合的工作機會。我們與眾多優質企業合作，為您開啟更多可能。',
-      features: ['中高階職位', '隱藏版職缺', '跨產業機會', '國際職缺'],
     },
   ];
 
@@ -138,7 +140,7 @@ export default function ForTalents() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service, index) => (
               <div
                 key={index}
@@ -147,16 +149,8 @@ export default function ForTalents() {
                 <div className="w-16 h-16 bg-gradient-to-br from-[#F37B22] to-[#ff9447] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                   <service.icon className="text-white" size={32} />
                 </div>
-                <h3 className="text-2xl font-bold text-[#333333] mb-4">{service.title}</h3>
-                <p className="text-gray-700 leading-relaxed mb-6">{service.description}</p>
-                <ul className="space-y-2">
-                  {service.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-center space-x-2 text-sm text-gray-600">
-                      <div className="w-1.5 h-1.5 bg-[#F37B22] rounded-full"></div>
-                      <span>{feature}</span>
-                    </li>
-                  ))}
-                </ul>
+                <h3 className="text-xl font-bold text-[#333333] mb-4">{service.title}</h3>
+                <p className="text-gray-700 leading-relaxed">{service.description}</p>
               </div>
             ))}
           </div>
