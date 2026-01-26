@@ -176,8 +176,7 @@ export default function About() {
 
           <div className="relative">
             <div className="absolute left-4 md:left-1/2 md:transform md:-translate-x-1/2 h-full w-1 bg-gradient-to-b from-[#F37B22] to-[#ff9447]"></div>
-
-            <div className="space-y-12">
+            {/* <div className="space-y-12">
               {timeline.map((item, index) => (
                 <div
                   key={index}
@@ -199,7 +198,7 @@ export default function About() {
                   <div className="flex-1 hidden md:block"></div>
                 </div>
               ))}
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

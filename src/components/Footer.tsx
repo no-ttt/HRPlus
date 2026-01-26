@@ -86,7 +86,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center space-x-3 text-sm">
                 <Mail size={18} className="text-[#F37B22] flex-shrink-0" />
-                <span className="text-gray-400">contact@hrplusconsultants.com</span>
+                <span className="text-gray-400">service@hrplusconsultants.com</span>
               </li>
             </ul>
           </div>

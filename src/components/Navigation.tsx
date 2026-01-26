@@ -33,12 +33,7 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-20">
           <Link to="/" className="flex items-center space-x-3 group">
             <div className="w-12 h-12 flex items-center justify-center transform group-hover:scale-105 transition-transform">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" className="w-12 h-12">
-                <circle cx="30" cy="30" r="12" fill="#F37B22" />
-                <path d="M 30 45 L 20 55 L 20 80 L 25 80 L 25 65 L 35 65 L 35 80 L 40 80 L 40 55 Z" fill="#F37B22" />
-                <rect x="60" y="35" width="8" height="30" rx="1" fill="#F37B22" />
-                <rect x="49" y="46" width="30" height="8" rx="1" fill="#F37B22" />
-              </svg>
+              <img src={`${import.meta.env.BASE_URL}logo.png`} alt="Logo" className="w-12 h-12" />
             </div>
             <div>
               <div className="font-bold text-xl">

@@ -79,8 +79,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-[#333333] mb-1">辦公地址</h3>
-                    <p className="text-gray-600">台北市信義區信義路五段7號</p>
-                    <p className="text-gray-600">台北 101 大樓 32 樓</p>
+                    <p className="text-gray-600">台北市南京東路二段150號11樓</p>
                   </div>
                 </div>
 
@@ -90,7 +89,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-[#333333] mb-1">聯絡電話</h3>
-                    <p className="text-gray-600">+886 2 1234 5678</p>
+                    <p className="text-gray-600">(886) 2 6605-7875</p>
                     <p className="text-sm text-gray-500 mt-1">週一至週五 09:00 - 18:00</p>
                   </div>
                 </div>
@@ -101,7 +100,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-[#333333] mb-1">電子郵件</h3>
-                    <p className="text-gray-600">hello@hrplus.com.tw</p>
+                    <p className="text-gray-600">service@hrplusconsultants.com</p>
                     <p className="text-sm text-gray-500 mt-1">24 小時內回覆</p>
                   </div>
                 </div>
