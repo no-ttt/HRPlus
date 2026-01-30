@@ -17,7 +17,7 @@ export default function Footer() {
                 </svg>
               </div>
               <div>
-                <div className="text-white font-bold text-xl">HRPlus Consulting</div>
+                <div className="text-white font-bold text-xl">HR<span className="text-[#F37B22]">Plus</span> Consulting</div>
                 <div className="text-[#F37B22] text-xs tracking-wider">YOUR Best HR Business Partner</div>
               </div>
             </div>

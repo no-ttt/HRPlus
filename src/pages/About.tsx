@@ -155,7 +155,7 @@ export default function About() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-[#333333] mb-4">我們的故事</h2>
+            <h2 className="text-4xl font-bold text-[#333333] mb-4">我們的優勢</h2>
             <div className="w-20 h-1 bg-[#F37B22] mx-auto mb-4"></div>
             <p className="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
               HRPlus 是一家中高階人才顧問諮詢公司，我們的顧問來自業界均具備20年以上HR與招募經驗，具備豐富的產業經驗與知識。

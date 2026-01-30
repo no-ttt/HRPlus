@@ -134,7 +134,7 @@ export default function Home() {
                       {['半導體', 'IC設計', '化學/材料', '消費電子', 'IT軟硬體', '電子元件', 'AI', '電動車', '軟體', '硬體', '網路/電信', '離岸風電', '民生消費'].map((industry, index) => (
                         <span
                           key={index}
-                          className="inline-block px-4 py-2 bg-gradient-to-r from-[#F37B22]/10 to-[#ff9447]/10 text-[#F37B22] rounded-full text-sm font-medium border border-[#F37B22]/20 hover:border-[#F37B22] hover:shadow-md transition-all duration-200"
+                          className="inline-block px-4 py-2 bg-gradient-to-r from-[#F37B22]/10 to-[#ff9447]/10 text-[#F37B22] rounded-full text-base font-medium border border-[#F37B22]/20 hover:border-[#F37B22] hover:shadow-md transition-all duration-200"
                         >
                           {industry}
                         </span>
@@ -157,13 +157,13 @@ export default function Home() {
                       {['CEO/CXO', 'RD', '技術服務', '工程', '業務和行銷', '採購', '生產製造', 'QA', '資訊', '人資', '財務會計'].map((position, index) => (
                         <span
                           key={index}
-                          className="inline-block px-4 py-2 bg-gradient-to-r from-[#F37B22]/10 to-[#ff9447]/10 text-[#F37B22] rounded-full text-sm font-medium border border-[#F37B22]/20 hover:border-[#F37B22] hover:shadow-md transition-all duration-200"
+                          className="inline-block px-4 py-2 bg-gradient-to-r from-[#F37B22]/10 to-[#ff9447]/10 text-[#F37B22] rounded-full text-base font-medium border border-[#F37B22]/20 hover:border-[#F37B22] hover:shadow-md transition-all duration-200"
                         >
                           {position}
                         </span>
                       ))}
                     </div>
-                    <p className="text-gray-600 text-sm mt-4 italic">等主管職位</p>
+                    <p className="text-gray-600 text-base mt-4 italic">等主管職位</p>
                   </div>
                 </div>
               </div>

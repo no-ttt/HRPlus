@@ -270,7 +270,7 @@ export default function Insights() {
         </div>
       </section>
 
-      <section className="py-20 bg-gradient-to-br from-[#F3EDE8] to-[#FAF9F7]">
+      {/* <section className="py-20 bg-gradient-to-br from-[#F3EDE8] to-[#FAF9F7]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white p-12 rounded-3xl shadow-xl text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-[#333333] mb-6">
@@ -292,7 +292,7 @@ export default function Insights() {
             <p className="text-sm text-gray-500 mt-4">我們尊重您的隱私，不會將您的資料用於其他用途</p>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }
