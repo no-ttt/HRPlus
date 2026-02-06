@@ -157,7 +157,7 @@ export default function ForTalents() {
         </div>
       </section>
 
-      <section className="py-20 bg-[#FAF9F7]">
+      {/* <section className="py-20 bg-[#FAF9F7]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-end mb-12">
             <div>
@@ -220,7 +220,7 @@ export default function ForTalents() {
             </Link>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
