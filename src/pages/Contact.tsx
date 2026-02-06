@@ -12,20 +12,50 @@ export default function Contact() {
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const GOOGLE_FORM_ACTION_URL = 'https://docs.google.com/forms/d/e/1FAIpQLScgsPlBUU6xmhLBT9HvGjXQE7izM6j1Ouqo8iGTO6vfd-MdcQ/formResponse';
+  const ENTRY_IDS = {
+    name: 'entry.1932043174',
+    company: 'entry.1890161487',
+    phone: 'entry.1161768948',
+    email: 'entry.804330278',
+    inquiry: 'entry.564152929',
+    message: 'entry.755125217',
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitted(true);
-    setTimeout(() => {
-      setIsSubmitted(false);
-      setFormData({
-        name: '',
-        company: '',
-        phone: '',
-        email: '',
-        inquiry: '',
-        message: '',
+
+    const params = new URLSearchParams();
+    params.append(ENTRY_IDS.name, formData.name);
+    params.append(ENTRY_IDS.company, formData.company);
+    params.append(ENTRY_IDS.phone, formData.phone);
+    params.append(ENTRY_IDS.email, formData.email);
+    params.append(ENTRY_IDS.inquiry, formData.inquiry);
+    params.append(ENTRY_IDS.message, formData.message);
+
+    try {
+      await fetch(GOOGLE_FORM_ACTION_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        body: params,
       });
-    }, 3000);
+
+      setIsSubmitted(true);
+      setTimeout(() => {
+        setIsSubmitted(false);
+        setFormData({
+          name: '',
+          company: '',
+          phone: '',
+          email: '',
+          inquiry: '',
+          message: '',
+        });
+      }, 5000);
+    } catch (error) {
+      console.error('Submission error:', error);
+      alert('發送失敗，請稍後再試或直接聯繫我們。');
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -48,8 +78,6 @@ export default function Contact() {
               </h1>
               <p className="text-lg sm:text-xl text-white/95 leading-relaxed">
                 有任何合作或招募需求，歡迎與我們聯繫
-                <br />
-                我們將在 24 小時內回覆您
               </p>
             </div>
           </div>
@@ -101,7 +129,6 @@ export default function Contact() {
                   <div>
                     <h3 className="font-semibold text-[#333333] mb-1">電子郵件</h3>
                     <p className="text-gray-600">service@hrplusconsultants.com</p>
-                    <p className="text-sm text-gray-500 mt-1">24 小時內回覆</p>
                   </div>
                 </div>
               </div>
@@ -212,11 +239,11 @@ export default function Contact() {
                         className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-[#F37B22] focus:outline-none transition-colors bg-white"
                       >
                         <option value="">請選擇</option>
-                        <option value="企業招募">企業招募服務</option>
+                        <option value="企業招募服務">企業招募服務</option>
                         <option value="人資顧問">人資策略顧問</option>
-                        <option value="職涯諮詢">個人職涯諮詢</option>
-                        <option value="履歷健檢">履歷健檢與面試準備</option>
-                        <option value="其他">其他需求</option>
+                        <option value="個人職涯諮詢">個人職涯諮詢</option>
+                        <option value="履歷健檢與面試準備">履歷健檢與面試準備</option>
+                        <option value="其他需求">其他需求</option>
                       </select>
                     </div>
 
