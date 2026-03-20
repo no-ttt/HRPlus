@@ -10,7 +10,7 @@ import Contact from './pages/Contact';
 
 function App() {
   return (
-    <Router basename="/HRPlus">
+    <Router>
       <div className="min-h-screen bg-white">
         <Navigation />
         <Routes>
