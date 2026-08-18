@@ -240,7 +240,7 @@ export default function Contact() {
                       >
                         <option value="">請選擇</option>
                         <option value="企業招募服務">企業招募服務</option>
-                        <option value="人資顧問">人資策略顧問</option>
+                        <option value="人資策略顧問">人資策略顧問</option>
                         <option value="個人職涯諮詢">個人職涯諮詢</option>
                         <option value="履歷健檢與面試準備">履歷健檢與面試準備</option>
                         <option value="其他需求">其他需求</option>
